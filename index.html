@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Tonic Travels | The Ultimate 6-Day Coorg Experience</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Changed background color from #f7f7f7 to a cleaner, brighter off-white */
+            background-color: #fcfcfc; 
+        }
+        .tonic-gradient {
+            background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%); /* Cyan to Emerald */
+        }
+        .glow-shadow {
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3), 0 4px 6px -2px rgba(16, 185, 129, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .glow-shadow:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- LOGO INTEGRATION: Replaced text title with the uploaded image -->
+            <div class="flex items-center">
+                <img src="uploaded:IMG-20251004-WA0003.jpg-afe8fc17-718f-4ef8-bc07-82bc21446dc2" 
+                     alt="Tech Tonic Travels Logo" 
+                     class="h-10 sm:h-12 w-auto object-contain">
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#why-us" class="hover:text-teal-600 transition duration-300">Why Us</a>
+                <a href="#itinerary" class="hover:text-teal-600 transition duration-300">Itinerary</a>
+                <a href="#coorg" class="hover:text-teal-600 transition duration-300">The Destination</a>
+                <a href="#book" class="px-3 py-1 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition duration-300">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="tonic-gradient text-white py-20 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Your Tech-Powered Escape to <span class="block sm:inline-block">Mystical Coorg</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                    Seamless travel planning, stunning heritage stays, and the breathtaking hills of Karnataka.
+                </p>
+                <a href="#itinerary" class="inline-block bg-white text-teal-600 font-bold py-3 px-8 rounded-full text-lg uppercase tracking-wider glow-shadow">
+                    Explore 6-Day Journey
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Tech Tonic Travels? (Selling Points) -->
+        <section id="why-us" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                    Why Choose Tech Tonic Travels?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Point 1 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-teal-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-teal-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Seamless Digital Itinerary</h3>
+                        <p class="text-gray-600 text-sm">Real-time GPS tracking, interactive maps, and dynamic schedule updates delivered instantly to your personalized travel app. Never miss a moment.</p>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-cyan-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="headset" class="w-8 h-8 text-cyan-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">24/7 AI-Backed Support</h3>
+                        <p class="text-gray-600 text-sm">Instant answers to common queries via our smart chatbot, supported by human travel experts available round the clock for emergencies or last-minute changes.</p>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="cloud-lightning" class="w-8 h-8 text-emerald-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Curated Connectivity</h3>
+                        <p class="text-gray-600 text-sm">We provide pre-configured travel routers or e-SIM guidance, ensuring reliable Wi-Fi/4G connectivity, even deep within the Coorg hills.</p>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-green-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="leaf" class="w-8 h-8 text-green-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Mindful, Sustainable Tech</h3>
+                        <p class="text-gray-600 text-sm">Our planning prioritizes fuel-efficient routes and locally sourced partners. Use our digital tools to minimize paper waste and environmental impact.</p>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-blue-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Luxury & Logistics Mastered</h3>
+                        <p class="text-gray-600 text-sm">We handle all bookings, check-ins, and transfers, leaving you free to enjoy the grandeur of a Mysore palace and the tranquility of Coorg's misty peaks.</p>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
+                        <i data-lucide="smartphone-off" class="w-8 h-8 text-indigo-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Digital Detox Guarantee</h3>
+                        <p class="text-gray-600 text-sm">Though tech-enabled, we craft moments for genuine immersion. Use our app to schedule tech-free zones and truly savor the natural 'tonic' of the Western Ghats.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Coorg Topography Section -->
+        <section id="coorg" class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                    <div class="mb-8 lg:mb-0 bg-white p-8 rounded-xl shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-teal-500 pb-2">
+                            The Destination: Coorg's Captivating Topography
+                        </h2>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Coorg (Kodagu) is perched on the eastern slopes of the magnificent Western Ghats, offering a dramatic contrast to the plains of Bangalore and Mysore. 
+                        </p>
+                        <ul class="mt-4 space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="mountain" class="w-5 h-5 text-teal-600 mr-2 mt-1 flex-shrink-0"></i>
+                                <span class="font-semibold text-gray-800">Mountain Majesty:</span> Home to towering peaks like Tadiandamol, the region is characterized by rolling hills, deep valleys, and verdant slopes that trap the monsoon mist.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="coffee" class="w-5 h-5 text-teal-600 mr-2 mt-1 flex-shrink-0"></i>
+                                <span class="font-semibold text-gray-800">Coffee Country:</span> The mild, humid climate and high altitude create the perfect environment for sprawling coffee (primarily Robusta) and spice plantations, which carpet the hillsides.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="droplet" class="w-5 h-5 text-teal-600 mr-2 mt-1 flex-shrink-0"></i>
+                                <span class="font-semibold text-gray-800">River Origins:</span> This area is the birthplace of the revered Kaveri River, with numerous streams and waterfalls (like Abbey Falls) adding to the lush, restorative landscape.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <!-- Placeholder Image for Coorg Hills -->
+                        <img src="https://placehold.co/800x600/10b981/ffffff?text=Coorg+Hills+%26+Plantations"
+                            alt="A panoramic view of the misty, green hills of Coorg with coffee plantations"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black opacity-30"></div>
+                        <p class="absolute bottom-4 left-4 text-white text-xl font-bold">Kodagu: Scotland of India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Itinerary Section -->
+        <section id="itinerary" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                    Your 6-Day "Tonic" Itinerary
+                </h2>
+                <div class="space-y-10">
+
+                    <!-- Day 1 -->
+                    <div class="flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-lg overflow-hidden p-6 md:p-8 border-l-4 border-indigo-500">
+                        <div class="md:w-1/4 flex-shrink-0">
+                            <span class="text-2xl font-extrabold text-indigo-600 block mb-1">Day 1</span>
+                            <span class="text-sm font-medium text-gray-500">Bangalore & Mysore</span>
+                        </div>
+                        <div class="md:w-2/4 md:pr-8 mt-4 md:mt-0">
+                            <h3 class="text-xl font-semibold mb-2">Arrival & Royal Heritage</h3>
+                            <p class="text-gray-700">Arrive in Bangalore and transfer to the historic city of Mysore. Check in to your palace stay and explore the royal city's charm and history.</p>
+                        </div>
+                        <div class="md:w-1/4 mt-4 md:mt-0 flex flex-col justify-center items-start">
+                            <h4 class="font-medium text-lg text-gray-900 mb-2">Stay: Lalitha Mahal Palace</h4>
+                            <a href="https://www.lalithamahalpalace.co.in/" target="_blank" class="text-sm bg-indigo-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-indigo-600 transition duration-300">
+                                Click for Info
+                                <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Day 2-4 -->
+                    <div class="flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-lg overflow-hidden p-6 md:p-8 border-l-4 border-teal-500">
+                        <div class="md:w-1/4 flex-shrink-0">
+                            <span class="text-2xl font-extrabold text-teal-600 block mb-1">Day 2 - 4</span>
+                            <span class="text-sm font-medium text-gray-500">Coorg: Nature's Refreshment</span>
+                        </div>
+                        <div class="md:w-2/4 md:pr-8 mt-4 md:mt-0">
+                            <h3 class="text-xl font-semibold mb-2">Coffee Trails & Misty Retreat</h3>
+                            <p class="text-gray-700">Three full days to explore the heart of Coorg. Enjoy nature walks, visit coffee plantations, see Abbey Falls, and explore Madikeri Fort. Pure hill-station bliss.</p>
+                        </div>
+                        <div class="md:w-1/4 mt-4 md:mt-0 flex flex-col justify-center items-start">
+                            <h4 class="font-medium text-lg text-gray-900 mb-2">Stay: Misty Woods Resort</h4>
+                            <a href="https://www.coorgmisty.com/" target="_blank" class="text-sm bg-teal-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-teal-600 transition duration-300">
+                                Click for Info
+                                <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-lg overflow-hidden p-6 md:p-8 border-l-4 border-blue-500">
+                        <div class="md:w-1/4 flex-shrink-0">
+                            <span class="text-2xl font-extrabold text-blue-600 block mb-1">Day 5</span>
+                            <span class="text-sm font-medium text-gray-500">Coastal Connection</span>
+                        </div>
+                        <div class="md:w-2/4 md:pr-8 mt-4 md:mt-0">
+                            <h3 class="text-xl font-semibold mb-2">Transition to Chennai</h3>
+                            <p class="text-gray-700">Check out from Coorg and travel to Chennai (flight/train arranged by Tech Tonic). Enjoy a luxurious final night in the metropolitan city.</p>
+                        </div>
+                        <div class="md:w-1/4 mt-4 md:mt-0 flex flex-col justify-center items-start">
+                            <h4 class="font-medium text-lg text-gray-900 mb-2">Stay: Trident Hotel Chennai</h4>
+                            <a href="https://www.tridenthotels.com/hotels-in-chennai/" target="_blank" class="text-sm bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+                                Click for Info
+                                <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Day 6 -->
+                    <div class="flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-lg overflow-hidden p-6 md:p-8 border-l-4 border-gray-500">
+                        <div class="md:w-1/4 flex-shrink-0">
+                            <span class="text-2xl font-extrabold text-gray-600 block mb-1">Day 6</span>
+                            <span class="text-sm font-medium text-gray-500">Departure</span>
+                        </div>
+                        <div class="md:w-2/4 md:pr-8 mt-4 md:mt-0">
+                            <h3 class="text-xl font-semibold mb-2">Farewell</h3>
+                            <p class="text-gray-700">Enjoy breakfast and personalized transfer assistance for your return journey from Chennai.</p>
+                        </div>
+                        <div class="md:w-1/4 mt-4 md:mt-0 flex justify-center items-center">
+                            <i data-lucide="plane" class="w-8 h-8 text-gray-500"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="book" class="bg-gray-900 py-16">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready for Your Tech Tonic?</h2>
+                <p class="text-gray-300 mb-8 text-xl">
+                    Secure your spot on the 6-Day Coorg Heritage & Hill Retreat. Leave the logistics to our tech; embrace the journey.
+                </p>
+                <button class="bg-red-500 text-white font-extrabold py-3 px-10 rounded-full text-lg uppercase tracking-widest hover:bg-red-600 transition duration-300 glow-shadow">
+                    Request Pricing & Availability
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Tech Tonic Travels. | Experience the future of bespoke travel.</p>
+            <p class="mt-2 text-gray-400">Powered by cutting-edge logistics. Travel smart, travel beautiful.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
